@@ -1,0 +1,324 @@
+/**=====================
+    2.16 Blog css start
+==========================**/
+.blog-style-1 {
+    .blog-content {
+        padding-top: 1.875rem;
+        width: 89%;
+
+        @include media-breakpoint-down(xl) {
+            padding-top: 0;
+            width: 100%;
+        }
+
+        a {
+            margin-top: 1.25rem;
+            text-decoration: underline;
+            color: #132431;
+            display: inline-block;
+
+            svg {
+                color: rgba(var(--primary), 1);
+                font-size: .75rem;
+            }
+
+            @include media-breakpoint-down(xl) {
+                margin-top: 0.5rem;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+
+    .blog-title {
+        background: rgba(var(--white), 0.5);
+        backdrop-filter: blur(4.79452px);
+        border-radius: 4.79452px;
+        padding: .5625rem 1.125rem;
+        margin-top: -1.5625rem;
+        display: inline-block;
+        min-width: 13.125rem;
+
+        h3 {
+            font-size: 1.25rem;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .blog-image-wrapper {
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 20.375rem;
+            object-fit: cover;
+            border-radius: .5rem;
+
+            @include media-breakpoint-down(xl) {
+                height: 16.375rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: 11.375rem;
+            }
+        }
+    }
+
+    .align-items-end {
+        >div {
+            &:nth-child(even) {
+                .blog-image-wrapper {
+                    img {
+                        @include media-breakpoint-up(lg) {
+                            height: 14rem;
+                        }
+
+                        @include media-breakpoint-up(xl) {
+                            height: 16.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.blog-style-4 {
+    position: relative;
+    overflow: hidden;
+
+    .bg-blur-color {
+        background: radial-gradient(50% 50% at 50% 50%, #5934DD 0%, rgba(22, 21, 74, 0) 100%);
+        top: 10.125rem;
+        left: -47.75rem;
+        height: 18.375rem;
+        filter: blur(6.25rem);
+
+        @include media-breakpoint-down(xxl) {
+            left: -49.75rem;
+            height: 11.25rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            left: -52.75rem;
+            height: 31.25rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            height: 25rem;
+            left: -53.75rem;
+        }
+    }
+
+    .blog-tabs {
+        justify-content: flex-end;
+        gap: 1rem;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: flex-start;
+        }
+
+        @media (max-width:460px) {
+            gap: .75rem;
+        }
+
+        .nav-item {
+            .nav-link {
+                display: flex;
+                align-items: center;
+                gap: .375rem;
+                border-radius: .3125rem;
+                padding: .75rem .9375rem;
+
+                @include media-breakpoint-down(xl) {
+                    font-size: .875rem;
+                    padding: .5625rem;
+                }
+
+                &:active,
+                &.active {
+                    background-color: rgba(var(--primary), 1);
+                    border-radius: .3125rem;
+
+                    svg {
+                        stroke: transparent;
+                        fill: rgba(var(--white), 1);
+                        padding-left: 0;
+                    }
+
+                    &:hover {
+                        color: rgba(var(--white), 1);
+                    }
+
+                    &::before {
+                        background: transparent;
+                    }
+                }
+
+                &:hover {
+                    color: rgba(var(--light-blue), 1);
+                }
+
+                &.category-btn {
+                    margin-top: 0;
+
+                    &::before {
+                        border-radius: .3125rem;
+                        padding: .0625rem;
+                    }
+                }
+
+                svg {
+                    width: 1rem;
+                    height: 1rem;
+                    padding-left: 0;
+                    fill: rgba(var(--light-blue), 1);
+                }
+            }
+        }
+    }
+}
+
+.blog-wrapper {
+    .blog-box {
+        .nft-collection {
+            img {
+                height: 19.3125rem;
+                border-top-left-radius: .625rem;
+                border-bottom-left-radius: .625rem;
+
+                @include media-breakpoint-down(xxl) {
+                    height: 16.625rem;
+                }
+
+                @include media-breakpoint-down(xl) {
+                    height: 13.875rem;
+                }
+
+                @include media-breakpoint-down(lg) {
+                    height: 15.625rem;
+                }
+
+                @include media-breakpoint-down(md) {
+                    height: 11.5625rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    height: calc(208px + (393 - 208) * ((100vw - 320px) / (576 - 320)));
+                }
+            }
+        }
+
+        .nft-items {
+            div {
+                a {
+                    .nft-item-1 {
+                        border-top-right-radius: .625rem;
+                    }
+
+                    .nft-item-2 {
+                        border-bottom-right-radius: .625rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-contents {
+        display: flex;
+        justify-content: space-between;
+        padding: .5625rem 0;
+
+        h6 {
+            font-weight: 500;
+            padding-bottom: .25rem;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 1rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: .875rem;
+            }
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            @media (max-width:500px) {
+                gap: .4375rem;
+            }
+        }
+
+        img {
+            height: 1.625rem;
+
+            @include media-breakpoint-down(xl) {
+                height: 1.25rem;
+            }
+        }
+
+        span {
+            color: rgba(var(--light-blue), 1);
+        }
+
+        svg {
+            height: .875rem;
+            width: .875rem;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        text-align: end;
+        color: rgba(var(--success), 1);
+        margin: 0;
+
+        @include media-breakpoint-down(xl) {
+            font-size: .8125rem;
+        }
+
+        @media (max-width:500px) {
+            display: none;
+        }
+    }
+
+    .nft-images {
+        .nft-items {
+
+            a {
+
+                .nft-item-1,
+                .nft-item-2 {
+
+                    border-radius: .625rem;
+
+                    @include media-breakpoint-down(xxl) {
+                        width: 22.25rem;
+                        height: 6rem;
+                    }
+
+                    @include media-breakpoint-down(xl) {
+                        height: 4.875rem;
+                    }
+                }
+            }
+
+            .col-6 {
+                @media (max-width:400px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+/**=====================
+    2.16 Blog css end
+==========================**/

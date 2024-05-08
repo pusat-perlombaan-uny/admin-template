@@ -1,0 +1,258 @@
+/**=====================
+    2.10 Feature css start
+==========================**/
+.feature-style-1 {
+    .feature-wrapper {
+        position: relative;
+        padding: .75rem;
+
+        @include media-breakpoint-down(xl) {
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 1.0625rem;
+            color: rgba(var(--theme-body-sub-title-color), 1);
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include media-breakpoint-down(sm) {
+                height: auto;
+            }
+        }
+
+        .feature-icon {
+            width: 3.75rem;
+            height: 3.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            margin: 0 auto .625rem;
+
+            @include media-breakpoint-down(xl) {
+                width: 2.8rem;
+                height: 2.8rem;
+            }
+
+            img {
+                @include media-breakpoint-down(xl) {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+            }
+        }
+
+        .feature-outline-box {
+            padding: 3px 3px 0;
+            border-radius: 1.5625rem;
+            box-shadow: 30px 30px 33px rgba(119, 119, 119, 0.25);
+
+            @include media-breakpoint-down(xl) {
+                box-shadow: 10px 10px 16px rgba(119, 119, 119, 0.25);
+            }
+
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 2.25rem .8125rem;
+            background: rgba(var(--light-color), 1);
+            border-radius: 1.5625rem;
+
+            @include media-breakpoint-down(md) {
+                padding: 1.5625rem .625rem;
+            }
+        }
+
+        .outline-box {
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: calc(100% + 35px);
+
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
+        }
+    }
+
+    .feature-main-wrapper {
+        margin-left: -1.875rem;
+        margin-right: -1.875rem;
+
+        @include media-breakpoint-down(xxl) {
+            margin-left: -1.25rem;
+            margin-right: -1.25rem;
+        }
+
+        @include media-breakpoint-down(xl) {
+            margin-left: -0.8rem;
+            margin-right: -0.8rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-left: -.75rem;
+            margin-right: -.75rem;
+        }
+
+        >div {
+            padding-left: 1.875rem;
+            padding-right: 1.875rem;
+
+            @include media-breakpoint-down(xxl) {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+            }
+
+            @include media-breakpoint-down(xl) {
+                padding-left: 0.8rem;
+                padding-right: 0.8rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-left: .75rem;
+                padding-right: .75rem;
+            }
+
+            &:last-child {
+                .feature-wrapper {
+                    .outline-box {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.feature-style-2 {
+    .feature-wrapper {
+        .feature-icon-wrap {
+            width: 3.625rem;
+            height: 3.625rem;
+            padding: .375rem;
+            background: linear-gradient(159.12deg, #ECEEF4 15.46%, rgba(var(--white), 1) 65.03%);
+            border-radius: 100%;
+
+            .feature-icon {
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                background: linear-gradient(159.08deg, #F9F9F9 12%, rgba(var(--white), 1) 86.17%);
+                box-shadow: 0px 4px 4px rgba(131, 126, 185, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    width: 1.5625rem;
+                    height: 1.5625rem;
+                }
+            }
+        }
+
+        .feature-content {
+            padding-top: .9375rem;
+
+            @include media-breakpoint-down(md) {
+                padding-top: .625rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+                padding-bottom: .625rem;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.125rem;
+                    padding-bottom: .3125rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        &:hover {
+            .feature-icon-wrap {
+                .feature-icon {
+                    svg {
+                        animation: tada 1.5s ease infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.feature-style-3 {
+    .feature-box {
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(var(--service-shadow), .04), 0 8.69547px 6.95638px rgba(var(--service-shadow), .06), 0 4.6181px 3.69448px rgba(var(--service-shadow), .0484671), 0 1.9217px 1.53736px rgba(var(--service-shadow), .0337375);
+
+        .feature-content {
+            padding: 1.5625rem .9375rem;
+
+            @include media-breakpoint-down(sm) {
+                padding: .9375rem;
+            }
+
+            .feature-icon {
+                box-shadow: 0 10px 10px rgba(var(--service-shadow), .04), 0 8.69547px 6.95638px rgba(var(--service-shadow), .06), 0 4.6181px 3.69448px rgba(var(--service-shadow), .0484671), 0 1.9217px 1.53736px rgba(var(--service-shadow), .0337375);
+                border-radius: 5px;
+                width: 3.625rem;
+                height: 3.625rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                @include media-breakpoint-down(sm) {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+
+            h3 {
+                font-size: 1.125rem;
+                margin-top: .9375rem;
+                margin-bottom: .3125rem;
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: .125rem;
+                }
+            }
+
+            p {
+                margin-top: .625rem;
+
+                @include media-breakpoint-down(xxl) {
+                    font-size: .875rem;
+                }
+            }
+
+            .d-flex {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .feature-footer {
+            padding: .9375rem;
+            border-top: 1px solid rgba(var(--theme-body-sub-title-color), 0.1);
+
+            a {
+                font-size: .875rem;
+            }
+        }
+    }
+}
+
+/**=====================
+    2.10 Feature css end
+==========================**/

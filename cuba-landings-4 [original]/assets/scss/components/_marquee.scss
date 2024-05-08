@@ -1,0 +1,47 @@
+/**=====================
+    2.26 Marquee css start
+==========================**/
+
+.marquee-style-4 {
+    position: relative;
+    overflow: hidden;
+
+    .marquee {
+
+        .marquee-content {
+            display: flex;
+            animation: scrolling 20s linear infinite;
+
+            .marquee-image {
+                display: flex;
+                gap: 6.25rem;
+
+                @include media-breakpoint-down(lg) {
+                    gap: 3.75rem;
+                }
+
+                @include media-breakpoint-down(md) {
+                    gap: 2.5rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    gap: 1.75rem;
+                }
+            }
+        }
+
+        @keyframes scrolling {
+            0% {
+                transform: translate(0);
+            }
+
+            100% {
+                transform: translate(-117vw);
+            }
+        }
+    }
+}
+
+/**=====================
+    2.26 Marquee css end
+==========================**/

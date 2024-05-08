@@ -1,0 +1,210 @@
+/**=====================
+    2.7 Service css start
+==========================**/
+.service-style-1 {
+    .service-content {
+        padding: 1.5625rem;
+
+        @include media-breakpoint-down(sm) {
+            padding: .9375rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+            }
+        }
+
+        .service-icon-box {
+            margin-bottom: .9375rem;
+        }
+
+        .service-content-wrap {
+            position: relative;
+
+            h3 {
+                padding-bottom: .625rem;
+            }
+
+            a {
+                @include media-breakpoint-up(sm) {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: .625rem;
+                    display: block;
+                }
+
+                svg {
+                    width: .75rem;
+                    height: .75rem;
+
+                    @include media-breakpoint-down(sm) {
+                        width: .625rem;
+                        height: .625rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .service-box {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 10.9412px 10.9412px rgba(var(--service-shadow), 0.04), 0px 9.51387px 7.6111px rgba(var(--service-shadow), 0.06), 0px 5.05275px 4.0422px rgba(var(--service-shadow), 0.0484671);
+        height: 100%;
+        transition: 0.5s;
+
+        &:hover {
+            transform: translateY(-5px);
+            transition: 0.5s;
+        }
+
+        .service-shape {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .service-icon-box {
+            margin-bottom: 1.5625rem;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: .9375rem;
+            }
+        }
+
+        .service-content-wrap {
+            h3 {
+                padding-bottom: .9375rem;
+
+                @include media-breakpoint-down(md) {
+                    padding-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+.service-wrapper {
+    margin-bottom: 1.875rem;
+
+    >div {
+        &:nth-child(odd) {
+            .service-image {
+                margin-right: 1.5625rem;
+
+                @include media-breakpoint-down(sm) {
+                    margin-right: .9375rem;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            .service-image {
+                margin-left: 1.5625rem;
+
+                @include media-breakpoint-down(sm) {
+                    margin-left: .9375rem;
+                }
+            }
+        }
+    }
+}
+
+.service-style-2 {
+    .title-style-1 {
+        h2 {
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include media-breakpoint-down(xxl) {
+                width: 83%;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+
+        p {
+            width: 49%;
+
+            @include media-breakpoint-down(xl) {
+                width: 67%;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+
+    .service-content {
+        text-align: center;
+        padding: 2.1875rem 2.375rem;
+
+        @include media-breakpoint-down(lg) {
+            padding: 1.875rem 1.25rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 1.25rem .9375rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 1.25rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.125rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .service-wrapper {
+
+        >div:nth-child(odd),
+        >div:nth-child(even) {
+            .service-image {
+                margin: 0 3.125rem;
+
+                @include media-breakpoint-down(lg) {
+                    margin: 0 1.875rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin: 0 1.25rem;
+                }
+            }
+        }
+    }
+
+    .light-card {
+        background: #F5F8FF;
+    }
+}
+
+/**=====================
+    2.7 Service css end
+==========================**/

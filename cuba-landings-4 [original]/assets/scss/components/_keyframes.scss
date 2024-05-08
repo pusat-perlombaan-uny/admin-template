@@ -1,0 +1,61 @@
+/**=====================
+  2.3 Keyframes css start
+==========================**/
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  50% {
+    transform: translateX(3px);
+    transition: 0.5s;
+  }
+
+  100% {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes arrow_svg {
+  0% {
+    transform: scale(0);
+    transform-origin: left;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: left;
+  }
+}
+
+/**=====================
+  2.3 Keyframes css end
+==========================**/

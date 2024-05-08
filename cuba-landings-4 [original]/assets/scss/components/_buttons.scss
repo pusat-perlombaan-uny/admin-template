@@ -1,0 +1,170 @@
+/**=====================
+   2.2 Buttons css start
+==========================**/
+.btn {
+    padding: .6875rem 1.5625rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: .875rem;
+        padding: .5rem .9375rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: .8125rem;
+    }
+}
+
+.btn-primary {
+    background-color: rgba(var(--primary), 1);
+    border-color: rgba(var(--primary), 1);
+    background-image: linear-gradient(30deg, rgba(var(--primary), 1) 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &.active,
+    &.show {
+        background-position: 100%;
+        background-color: transparent;
+        border-color: rgba(var(--primary), 1);
+        color: rgba(var(--primary), 1);
+    }
+
+}
+
+.btn-check:checked+.btn-primary,
+:not(.btn-check)+.btn-primary:active,
+.btn-primary:first-child:active,
+.btn-primary.active,
+.btn-primary.show {
+    background-position: 100%;
+    background-color: transparent;
+    border-color: rgba(var(--primary), 1);
+    color: rgba(var(--primary), 1);
+}
+
+
+.btn-dark {
+    background-color: rgba(var(--dark), 1);
+    border-color: rgba(var(--dark), 1);
+    color: rgba(var(--white), 1);
+}
+
+.btn-success {
+    background-color: rgba(var(--success), 1);
+    border-color: rgba(var(--success), 1);
+    background-image: linear-gradient(30deg, rgba(var(--success), 1) 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &.active,
+    &.show {
+        background-position: 100%;
+        background-color: transparent;
+        border-color: rgba(var(--success), 1);
+        color: rgba(var(--success), 1);
+    }
+}
+
+.btn-check:checked+.btn-success,
+:not(.btn-check)+.btn-success:active,
+.btn-success:first-child:active,
+.btn-success.active,
+.btn-success.show {
+    background-position: 100%;
+    background-color: transparent;
+    border-color: rgba(var(--success), 1);
+    color: rgba(var(--success), 1);
+}
+
+.btn-white {
+    background-color: rgba(var(--white), 1);
+    border-color: rgba(var(--white), 1);
+    color: rgba(var(--primary), 1);
+
+    &:hover {
+        background-color: rgba(var(--white), 1);
+        border-color: rgba(var(--white), 1);
+        color: rgba(var(--primary), 1);
+    }
+}
+
+.btn-light-primary {
+    color: rgba(var(--primary), 1);
+    background-color: rgba(var(--primary), 0.1);
+
+    &:hover {
+        background-color: rgba(var(--white), 1);
+        color: rgba(var(--primary), 1);
+    }
+}
+
+.category-btn {
+    position: relative;
+    border-radius: 0.625rem;
+    border: 1px solid;
+    border-image-slice: 1;
+    color: rgba(var(--light-blue), 1);
+    margin-top: -2.5rem;
+    padding: .4375rem 1.4375rem;
+
+    @include media-breakpoint-down(xxl) {
+        margin-top: -4rem;
+    }
+
+    @include media-breakpoint-down(xl) {
+        margin-top: -2.8125rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-top: -0.625rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: .4375rem .875rem;
+        margin-top: 1.125rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 0.625rem;
+        padding: 0.063rem;
+        background: linear-gradient(90.68deg, rgba(90, 81, 255, 0.8134) -3.14%, #918CF1 72.68%);
+        -webkit-mask: linear-gradient(rgba(var(--white), 1) 0 0) content-box, linear-gradient(rgba(var(--white), 1) 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: 1
+    }
+
+    svg {
+        padding-left: .375rem;
+
+        @include media-breakpoint-down(md) {
+            padding-left: unset;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: .625rem;
+        }
+    }
+
+    &:hover {
+        color: rgba(var(--light-blue), 1);
+    }
+}
+
+
+/**=====================
+   2.2 Buttons css end
+==========================**/

@@ -1,0 +1,204 @@
+/**=====================
+    2.20 Process css start
+==========================**/
+.process-style-1 {
+    .title-style-2 {
+        p {
+            width: 78%;
+            margin-left: -2%;
+
+            @include media-breakpoint-down(xxl) {
+                width: 84%;
+                margin-left: 1.125rem;
+            }
+
+            @include media-breakpoint-down(xl) {
+                margin-left: 0;
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            @include media-breakpoint-up(xl) {
+                margin-left: -13%;
+            }
+
+            &::after {
+                left: 0;
+            }
+        }
+    }
+
+    .process-left-image {
+        margin-top: 1.125rem;
+    }
+
+    --gap: 50px;
+    --width: 155px;
+
+    @include media-breakpoint-down(lg) {
+        --gap: 35px;
+        --width: 135px;
+    }
+
+    .process-wrap {
+        position: relative;
+        background: linear-gradient(225deg, #FFFFFF 1.56%, #EBEAEA 72.27%);
+        border-radius: 100%;
+        padding: .1875rem;
+        width: var(--width);
+        height: var(--width);
+        z-index: 1;
+
+        @include media-breakpoint-down(md) {
+            margin-inline: auto;
+        }
+
+        .process-box {
+            background: rgba(var(--customer-review-bg), 1);
+            border-radius: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            svg {
+                width: 2.0625rem;
+                height: 2.0625rem;
+                margin: 0 auto .625rem;
+
+                @include media-breakpoint-down(lg) {
+                    width: 1.5625rem;
+                    height: 1.5625rem;
+                }
+            }
+
+            h3 {
+                font-size: .875rem;
+            }
+        }
+
+        .bg-shape {
+            position: absolute;
+            width: calc(var(--width) + var(--gap) + 8px);
+            top: -4px;
+            left: -4px;
+            z-index: 1;
+            height: calc(var(--width) + 8px);
+
+            @include media-breakpoint-down(lg) {
+                width: calc(var(--width) + var(--gap) + 17px);
+            }
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+
+        .line-shape {
+            position: absolute;
+            right: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            width: 24%;
+
+            @include media-breakpoint-down(lg) {
+                right: -30px;
+            }
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+
+    .shadow-img {
+        position: absolute;
+        top: 40px;
+        left: -30px;
+        z-index: -1;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .process-main-wrapper {
+        margin-left: 6.25rem;
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: flex-start;
+        gap: var(--gap);
+
+        @include media-breakpoint-down(xxl) {
+            margin-left: 2.25rem;
+        }
+
+        @include media-breakpoint-down(xl) {
+            margin-left: 0;
+            justify-content: center;
+        }
+
+        @include media-breakpoint-down(md) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+            margin-top: 1.5rem;
+        }
+
+        >div {
+            width: var(--width);
+
+            @include media-breakpoint-down(md) {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+
+            &:last-child {
+                .process-wrap {
+                    .bg-shape {
+                        width: 165px;
+
+                        @include media-breakpoint-down(lg) {
+                            width: 145px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .step-content {
+        margin-top: 2.8125rem;
+        text-align: center;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 1.25rem;
+        }
+
+        .badge {
+            border-radius: 0;
+        }
+
+        p {
+            padding: .9375rem 0 0;
+            margin-bottom: -0.1875rem;
+
+            @include media-breakpoint-down(md) {
+                padding-top: .625rem;
+            }
+        }
+    }
+}
+
+/**=====================
+    2.20 Process css end
+==========================**/

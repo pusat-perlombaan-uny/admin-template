@@ -1,0 +1,237 @@
+/**=====================
+   1.2 Typography css start
+==========================**/
+body {
+    font-size: 14px;
+    font-family: $font-rubik, $font-serif;
+
+    @include media-breakpoint-down(md) {
+        font-size: 13px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.4375rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @media (max-width: 1460px) {
+        font-size: 3.125rem;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 2.8125rem;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1.8rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.5rem;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @include media-breakpoint-down(xl) {
+        font-size: 2.1875rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1.625rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.375rem;
+    }
+}
+
+h3 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @include media-breakpoint-down(xl) {
+        font-size: 1.5625rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1.375rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.25rem;
+    }
+}
+
+h4 {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1.25rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.125rem;
+    }
+}
+
+h5 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+    font-weight: 400;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1.125rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+h6 {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-weight: 400;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: .875rem;
+    }
+}
+
+a,
+li {
+    font-size: 1rem;
+    line-height: 1.2;
+
+    @include media-breakpoint-down(lg) {
+        font-size: .875rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: .8125rem;
+    }
+}
+
+a {
+    color: rgba(var(--primary), 1);
+    text-decoration: unset;
+
+    svg {
+        fill: rgba(var(--primary), 1);
+    }
+
+    &:hover {
+        color: rgba(var(--primary), 1);
+    }
+}
+
+p {
+    font-size: 1rem;
+    color: rgba(var(--theme-body-sub-title-color), 1);
+    letter-spacing: 0.3px;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(lg) {
+        font-size: .875rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: .8125rem;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    line-height: 1.5;
+}
+
+.layout-3 {
+    a {
+        svg {
+            font-size: .75rem;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            .fa-arrow-right {
+                transform: translateX(3px);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .ratings {
+        gap: .3125rem;
+
+        svg {
+            font-size: .8125rem;
+            color: #FFC107;
+        }
+    }
+}
+
+.layout-4 {
+    background-color: rgba(var(--dark-bg), 1);
+    position: relative;
+
+    &::before {
+        background-image: url(../images/nft/bg.webp);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        mix-blend-mode: overlay;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: rgba(var(--white), 1);
+    }
+
+    p {
+        color: rgba(var(--light-blue), 1);
+    }
+}
+
+/**=====================
+   1.2 Typography css end
+==========================**/

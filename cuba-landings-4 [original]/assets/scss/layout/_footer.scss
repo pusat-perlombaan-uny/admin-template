@@ -1,0 +1,360 @@
+/**=====================
+   3.3 Footer css start
+==========================**/
+.footer-style-1 {
+    background: linear-gradient(98.61deg, #1A1A25 18.35%, #191925 56.57%);
+    position: relative;
+
+    .footer-links {
+        li {
+            a {
+                color: rgba(var(--white), 0.8);
+                display: flex;
+                align-items: center;
+                gap: .625rem;
+
+                svg {
+                    font-size: .625rem;
+                }
+
+                &:hover {
+                    color: rgba(var(--primary), 1);
+                }
+            }
+        }
+    }
+
+    .main-footer {
+        position: relative;
+        padding: 3.75rem 0 2.5rem;
+
+        @include media-breakpoint-down(lg) {
+            padding: 3.125rem 0 2.1875rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 2.5rem 0 1.875rem;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 40%;
+            height: 100%;
+            background: rgba(36, 36, 54, 0.5);
+            right: 0;
+            top: 0;
+
+            @include media-breakpoint-down(xxl) {
+                width: 37%;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                height: 35%;
+                top: unset;
+                bottom: 0;
+            }
+        }
+
+        .footer-contact {
+            position: relative;
+            z-index: 1;
+            border-right: 1px solid #272445;
+
+            @include media-breakpoint-down(xl) {
+                border-right: none;
+            }
+
+            p {
+                color: rgba(var(--white), 1);
+                opacity: 0.8;
+                padding-top: .9375rem;
+                width: 96%;
+
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                }
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+                margin-top: 1.5625rem;
+
+                @include media-breakpoint-down(md) {
+                    gap: .9375rem;
+                    margin-top: .9375rem;
+                }
+
+                li {
+                    a {
+                        color: rgba(var(--white), 1);
+
+                        svg {
+                            font-size: 1.5rem;
+
+                            @include media-breakpoint-down(md) {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        &:hover {
+                            color: rgba(var(--primary), 1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-content {
+            position: relative;
+            z-index: 1;
+
+            h3 {
+                position: relative;
+                font-size: 1.25rem;
+                color: rgba(var(--white), 1);
+                padding-bottom: .625rem;
+                margin-bottom: 1.25rem;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1rem;
+                    margin-bottom: 0.8rem;
+                }
+
+                &::after {
+                    width: 34px;
+                    height: 3px;
+                    position: absolute;
+                    content: '';
+                    background-color: rgba(var(--warning), 1);
+                    border-radius: .625rem;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: .625rem;
+
+                @include media-breakpoint-down(md) {
+                    gap: .3125rem;
+                }
+            }
+        }
+
+        .footer-location {
+            color: rgba(var(--white), 1);
+
+            h6 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin-bottom: .625rem;
+
+                @include media-breakpoint-down(md) {
+                    font-size: .875rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: .3125rem;
+                }
+            }
+
+            p {
+                color: rgba(var(--white), 1);
+                opacity: 0.8;
+                line-height: 1.4;
+            }
+
+            .footer-icon {
+                min-width: 2.375rem;
+                height: 2.375rem;
+                background: #191925;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+
+                svg {
+                    width: 1.125rem;
+                    height: 1.125rem;
+                    fill: rgba(var(--white), 1);
+                }
+            }
+
+            .d-flex {
+                gap: .9375rem;
+            }
+
+            li {
+                +li {
+                    margin-top: 1.875rem;
+
+                    @include media-breakpoint-down(md) {
+                        margin-top: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-footer {
+        padding: 1rem 0;
+        border-top: 1px solid #272445;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+
+        p {
+            color: rgba(var(--white), 0.8);
+        }
+
+        .sub-footer-links {
+            display: flex;
+            gap: 1.875rem;
+            justify-content: flex-end;
+
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+                padding-top: .625rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-top: .3125rem;
+                gap: .9375rem;
+            }
+        }
+    }
+}
+
+.footer-style-2 {
+    .main-footer {
+        padding-top: 2.5rem;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 1.875rem;
+        }
+
+        .footer-contact {
+            height: 100%;
+        }
+
+        .footer-content {
+            border-right: 1px solid #272445;
+        }
+
+        &:after {
+            display: none;
+        }
+
+        .row {
+            >div {
+                &:last-child {
+                    .footer-content {
+                        border-right: unset;
+                    }
+                }
+
+                &:nth-child(3) {
+                    @include media-breakpoint-down(md) {
+                        .footer-content {
+                            border-right: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-top-content {
+        padding-top: 3.125rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid #272445;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 2.5rem;
+            padding-bottom: 1.875rem;
+        }
+
+        .footer-right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.5625rem;
+
+            @include media-breakpoint-down(lg) {
+                justify-content: flex-start;
+            }
+
+            @include media-breakpoint-down(md) {
+                gap: .625rem;
+            }
+        }
+
+        .footer-top {
+            h3 {
+                font-size: 1.625rem;
+                margin-bottom: .625rem;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 1.375rem;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.25rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+            }
+
+            p {
+                color: rgba(var(--white), 1);
+            }
+        }
+
+        .btn-dark {
+            background: #242438;
+            border-color: #242438;
+        }
+    }
+}
+
+.footer-style-4 {
+    &.footer-style-1 {
+        background: unset;
+
+        .main-footer {
+            border-top: 1px solid rgba(var(--footer-border), 0.3);
+            padding: 3.75rem 0;
+
+            @include media-breakpoint-down(sm) {
+                padding: 2.5rem 0;
+            }
+
+            .footer-content {
+                h3 {
+                    &:after {
+                        background-color: rgba(var(--success), 1);
+                    }
+                }
+
+                .footer-location {
+                    .footer-icon {
+                        background: rgba(var(--card-bg), 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**=====================
+   3.3 Footer css end
+==========================**/

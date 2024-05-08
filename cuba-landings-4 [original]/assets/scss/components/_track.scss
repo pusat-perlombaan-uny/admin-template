@@ -1,0 +1,76 @@
+/**=====================
+   2.18 Track css start
+==========================**/
+.track-card {
+    background: url(../images/app-landing/track/1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1.875rem;
+    border-radius: 10px;
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 1.875rem;
+    }
+
+    .women-image {
+        position: absolute;
+        top: 26%;
+
+        @include media-breakpoint-down(xl) {
+            width: 22%;
+            top: unset;
+            bottom: 8.75rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+
+    .track-images-wrapper {
+        position: relative;
+        margin-bottom: -0.875rem;
+    }
+
+    .left-image {
+        position: absolute;
+        left: -3.4375rem;
+        bottom: -6.25rem;
+        animation: up-down 4s infinite;
+
+        @include media-breakpoint-down(xl) {
+            left: 8.5625rem;
+        }
+    }
+
+    .right-image {
+        position: absolute;
+        right: -6.25rem;
+        bottom: -8.75rem;
+        animation: up-down 5s infinite;
+
+        @include media-breakpoint-down(xl) {
+            right: 3.75rem;
+        }
+    }
+
+    .left-image,
+    .right-image {
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+}
+
+.track-style-2 {
+    position: relative;
+    padding-bottom: 8.75rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 0;
+    }
+}
+
+/**=====================
+   2.18 Track css end
+==========================**/

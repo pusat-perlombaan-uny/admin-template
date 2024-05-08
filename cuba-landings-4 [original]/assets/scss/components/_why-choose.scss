@@ -1,0 +1,123 @@
+/**=====================
+    2.17 Why choose css start
+==========================**/
+.choose-style-2 {
+    .choose-image {
+        position: relative;
+        padding-bottom: 3.75rem;
+
+        .right-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            animation: up-down 4s infinite;
+
+            @include media-breakpoint-down(xxl) {
+                width: 34%;
+            }
+        }
+    }
+
+    .choose-content {
+        .choose-icon {
+            min-width: 2.3125rem;
+            height: 2.3125rem;
+            box-shadow: 0px 4px 4px rgba(var(--theme-body-sub-title-color), 0.2);
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 1.0625rem;
+                height: 1.0625rem;
+            }
+
+            &:hover {
+                svg {
+                    animation: tada 1.5s ease infinite;
+                }
+            }
+        }
+
+        ul {
+            li {
+                display: flex;
+                gap: 1.875rem;
+
+                @include media-breakpoint-down(md) {
+                    gap: 1.25rem;
+                }
+
+                +li {
+                    margin-top: .625rem;
+                }
+
+                p {
+                    position: relative;
+                    line-height: 1.5;
+                    padding-bottom: 1.875rem;
+
+                    @include media-breakpoint-down(md) {
+                        padding-bottom: 1.25rem;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: .625rem;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 1px;
+                        height: calc(100% - 12px);
+                        border-left: 1px dashed rgba(var(--theme-body-sub-title-color), 0.5);
+                        top: 1rem;
+                        left: -3rem;
+
+                        @include media-breakpoint-down(md) {
+                            left: -2.5rem;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    p {
+                        padding-bottom: 0;
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            margin-bottom: .625rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: .875rem;
+            }
+        }
+    }
+
+    .row {
+        >div {
+            &:last-child {
+                @include media-breakpoint-down(lg) {
+                    order: -1;
+                }
+            }
+        }
+    }
+}
+
+/**=====================
+    2.17 Why choose css end
+==========================**/

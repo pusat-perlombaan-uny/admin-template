@@ -1,0 +1,79 @@
+/**=====================
+    2.24 Creator css start
+==========================**/
+
+.creator-style-4 {
+    .title-style-4 {
+        h2 {
+            margin-top: -0.875rem;
+
+            @include media-breakpoint-down(xl) {
+                margin-top: -0.75rem;
+            }
+
+            @include media-breakpoint-down(lg) {
+                margin-top: -0.625rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-top: -0.5rem;
+            }
+        }
+    }
+
+    .creator-wrapper {
+        .swiper {
+
+            &.creator-slider-1 {
+                overflow: unset;
+
+                .category-box {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    margin-bottom: .9375rem;
+
+                    .category-image {
+                        height: 6.25rem;
+                        position: absolute;
+                        bottom: 0;
+
+                        @include media-breakpoint-down(md) {
+                            height: 5rem;
+                        }
+                    }
+
+                    .shadow-box {
+                        width: 7.4375rem;
+                        height: 7.4375rem;
+                        border-radius: .625rem;
+
+                        @include media-breakpoint-down(md) {
+                            width: 6.25rem;
+                            height: 6.25rem;
+                        }
+                    }
+                }
+
+                p {
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+
+            .bottom-nav {
+                position: absolute;
+                top: -150px;
+                right: 1.5625rem;
+
+                @include media-breakpoint-down(md) {
+                    position: unset;
+                }
+            }
+        }
+    }
+}
+
+/**=====================
+    2.24 Creator css end
+==========================**/

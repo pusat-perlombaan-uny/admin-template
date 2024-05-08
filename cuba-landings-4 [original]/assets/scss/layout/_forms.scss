@@ -1,0 +1,20 @@
+/**=====================
+    3.1 Forms css start
+==========================**/
+.form-control {
+    @include media-breakpoint-down(lg) {
+        font-size: .875rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: .8125rem;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/**=====================
+    3.1 Forms css end
+==========================**/

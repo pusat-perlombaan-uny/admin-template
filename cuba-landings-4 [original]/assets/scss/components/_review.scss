@@ -1,0 +1,505 @@
+/**=====================
+    2.12 Review css start
+==========================**/
+.review-style-1 {
+    background-color: rgba(var(--even-bg), 1);
+
+    .review-box {
+        background-color: rgba(var(--white), 1);
+        box-shadow: 0px 5.05275px 4.0422px rgba(var(--service-shadow), 0.05);
+        border-radius: 5px;
+        padding: 1.5625rem;
+
+        @include media-breakpoint-down(sm) {
+            padding: 1.125rem;
+        }
+
+        .review-user {
+            gap: .625rem;
+            margin-bottom: 1.25rem;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 0.8rem;
+            }
+
+            .social-links {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                gap: .3125rem;
+
+                @media (max-width: 420px) {
+                    display: none;
+                }
+
+                li {
+                    a {
+                        width: 1.75rem;
+                        height: 1.75rem;
+                        background-color: rgba(var(--primary), 0.1);
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        svg {
+                            font-size: 12px;
+                        }
+
+                        &:hover {
+                            background-color: rgba(var(--primary), 1);
+                            color: rgba(var(--white), 1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .review-image {
+            img {
+                width: 3rem;
+                height: 2.625rem;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+        }
+
+        p {
+            opacity: 0.8;
+
+            +p {
+                margin-top: 1.25rem;
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: 0.8rem
+                }
+            }
+        }
+
+        h3 {
+            font-size: 1.125rem;
+
+            @include media-breakpoint-down(xxl) {
+                font-size: 1rem;
+            }
+        }
+
+        .ratings {
+            gap: .1875rem;
+            justify-content: flex-end;
+            margin-top: .3125rem;
+
+            li {
+                svg {
+                    font-size: .75rem;
+                    color: #F2B827;
+                }
+
+                .fill-light {
+                    color: rgba(var(--theme-body-sub-title-color), 0.4);
+                }
+            }
+        }
+
+        .review-content {
+            height: 8.75rem;
+            overflow: hidden;
+
+            @include media-breakpoint-down(xxl) {
+                height: 10.75rem;
+            }
+
+            @include media-breakpoint-down(lg) {
+                height: 8.75rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: 8rem;
+            }
+        }
+    }
+
+    .review-slider-wrapper {
+        margin: -.375rem 0;
+    }
+
+    .review-slider-1 {
+        padding: .375rem 0;
+
+        &.swiper-3d {
+            .swiper-slide-shadow-left {
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 67.76%, rgba(99, 93, 164, 0.2) 99.17%);
+                filter: blur(5px);
+
+                @include media-breakpoint-down(lg) {
+                    background: transparent;
+                }
+            }
+
+            .swiper-slide-shadow-right {
+                background: linear-gradient(90deg, rgba(99, 93, 164, 0.2) 4.76%, rgba(255, 255, 255, 0) 31.17%);
+                filter: blur(5px);
+
+                @include media-breakpoint-down(lg) {
+                    background: transparent;
+                }
+            }
+        }
+
+        .swiper-wrapper {
+            height: auto;
+        }
+    }
+}
+
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.625rem;
+    margin-top: 1.875rem;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: .9375rem;
+    }
+
+    .slidePrev-btn,
+    .slideNext-btn {
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 100%;
+        background-color: rgba(var(--white), 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(var(--theme-body-sub-title-color), 0.8);
+
+        @include media-breakpoint-down(sm) {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &:hover {
+            background-color: rgba(var(--primary), 1);
+            color: rgba(var(--white), 1);
+        }
+    }
+
+    .slideNext-btn {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: .9375rem;
+            width: 1px;
+            left: -0.75rem;
+            background: rgba(var(--theme-body-sub-title-color), 0.3);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.customer-review-style-1 {
+    .customer-review-wrapper {
+        position: relative;
+        padding-bottom: 2.5rem;
+        display: flex;
+        align-items: center;
+        gap: 2.3125rem;
+
+        @include media-breakpoint-down(xxl) {
+            gap: 1.5rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+            gap: .9375rem;
+        }
+
+        .customer-icon {
+            position: relative;
+            width: 4.875rem;
+            height: 4.875rem;
+            background: rgba(var(--customer-review-bg), 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            z-index: 1;
+
+            svg:not(.shape-svg) {
+                width: 1.4375rem;
+                height: 1.4375rem;
+
+                @include media-breakpoint-down(md) {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 4.3rem;
+                height: 4.3rem;
+                box-shadow: 5px 5px 5px rgba(var(--black), 0.2);
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 4rem;
+                height: 4rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        .shape-svg {
+            position: absolute;
+            left: -7px;
+            top: -5px;
+            width: 5rem;
+            height: 5.5rem;
+
+            @include media-breakpoint-down(lg) {
+                width: 4.6875rem;
+                height: 4.8125rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 4.375rem;
+                height: 4.6875rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 3.5625rem;
+                height: 3.625rem;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 4px;
+            left: 0;
+            background: url(../images/shape/5.webp);
+            background-repeat: no-repeat;
+
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+
+        .shape-line {
+            position: absolute;
+            width: 70%;
+            height: 100%;
+            bottom: 0;
+
+            @include media-breakpoint-down(xl) {
+                width: 100%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+    }
+}
+
+.review-style-2 {
+    .review-user {
+        span {
+            color: rgba(var(--theme-body-sub-title-color), 1);
+            opacity: 0.8;
+        }
+    }
+
+    .review-box {
+        h3 {
+            margin-bottom: .3125rem;
+        }
+
+        .review-content {
+            height: 7.5rem;
+
+            @include media-breakpoint-down(lg) {
+                height: 6.5rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: 6.3rem;
+            }
+        }
+
+        .review-image {
+            img {
+                width: 2.625rem;
+            }
+        }
+    }
+
+    .review-slider-2 {
+        .swiper-wrapper {
+            height: auto;
+        }
+
+        .bottom-nav {
+
+            .slidePrev-btn,
+            .slideNext-btn {
+                border: 1px solid rgba(var(--theme-body-sub-title-color), 0.3);
+                border-radius: 10px;
+            }
+
+            .slideNext-btn {
+                &::before {
+                    left: -0.875rem;
+                }
+            }
+        }
+    }
+
+    .review-slider-wrapper {
+        margin: 0;
+    }
+}
+
+.review-style-3 {
+    .review-content {
+        display: flex;
+        align-items: center;
+        gap: .9375rem;
+
+        >div {
+            margin-top: .3125rem;
+        }
+
+        img {
+            min-width: 3.5625rem;
+            height: 3.5625rem;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            margin-bottom: .3125rem;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .review-nav {
+        border-bottom: 1px solid rgba(var(--theme-body-sub-title-color), 0.2);
+
+        .swiper-slide {
+            padding-bottom: 1.875rem;
+            border-bottom: 3px solid transparent;
+
+            @include media-breakpoint-down(xxl) {
+                padding-bottom: 0.5rem;
+            }
+
+            &.swiper-slide-thumb-active {
+                border-bottom: 3px solid rgba(var(--primary), 1);
+            }
+        }
+    }
+
+    .review-slider-3 {
+        padding-top: 1.875rem;
+
+        @include media-breakpoint-down(lg) {
+            padding-top: 1.5625rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding-top: .9375rem;
+        }
+    }
+
+    .review-box {
+        background-image: url(../images/job/review-bg.webp);
+        padding: 1.875rem 2.5rem;
+        border-radius: .625rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-down(lg) {
+            padding: 1.5625rem;
+        }
+
+        p {
+            color: rgba(var(--white), 1);
+            height: 4.375rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include media-breakpoint-down(lg) {
+                height: 3.875rem;
+            }
+        }
+
+        .ratings {
+            gap: .3125rem;
+            justify-content: flex-end;
+
+            @include media-breakpoint-down(xl) {
+                justify-content: flex-start;
+            }
+        }
+
+        .quote-image {
+            position: absolute;
+            right: 1.875rem;
+            bottom: 1.25rem;
+
+            @include media-breakpoint-down(md) {
+                width: 5%;
+            }
+        }
+
+        .row {
+            >div {
+                &:last-child {
+                    @include media-breakpoint-down(xl) {
+                        order: -1;
+                    }
+                }
+            }
+        }
+    }
+
+    .review-details {
+        .btn {
+            padding-top: .375rem;
+            padding-bottom: .375rem;
+            margin-top: .9375rem;
+        }
+    }
+
+    .swiper-slide {
+        height: unset;
+    }
+}
+
+
+/**=====================
+    2.12 Review css end
+==========================**/

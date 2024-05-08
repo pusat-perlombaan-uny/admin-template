@@ -1,0 +1,228 @@
+/**=====================
+    3.2 Header css start
+==========================**/
+.dropdown-item {
+    color: var(--bs-nav-link-color);
+    text-transform: capitalize;
+
+    &.active,
+    &:active {
+        background-color: rgba(var(--primary), 1);
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.navbar-toggler-icon {
+    @include media-breakpoint-down(md) {
+        width: 1em;
+        height: 1em;
+    }
+}
+
+header {
+    .navbar-brand {
+        img {
+            @include media-breakpoint-down(sm) {
+                width: 5.625rem;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        flex-grow: unset;
+
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+            top: 60px;
+            padding: 10px;
+            background-color: rgba(var(--white), 1);
+            z-index: 9;
+            box-shadow: 5px 5px 5px rgba(var(--black), 0.02);
+            padding: 1.5625rem;
+            right: 21%;
+            width: 13.125rem;
+        }
+    }
+
+    .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link {
+                padding: 0;
+
+                &.active {
+                    color: rgba(var(--primary), 1);
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        gap: 1.875rem;
+
+        @include media-breakpoint-down(lg) {
+            gap: .625rem;
+        }
+    }
+
+    .navbar {
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+
+        @include media-breakpoint-down(lg) {
+            padding-top: .625rem;
+            padding-bottom: .625rem;
+        }
+
+        >.container {
+            gap: 10px;
+        }
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        padding: 0;
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.header-absolute {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    .bg-light {
+        background-color: transparent !important;
+    }
+}
+
+.header-3 {
+    .navbar-nav {
+        .nav-item {
+            &:nth-last-child(-n + 2) {
+                .nav-link {
+                    @include media-breakpoint-up(xl) {
+                        color: rgba(var(--white), 1);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+.nft-search {
+    position: relative;
+
+    svg {
+        position: absolute;
+        width: 0.9375rem;
+        height: 0.9375rem;
+        right: 0.75rem;
+        stroke: rgba(var(--light-blue), 1);
+
+        @media (max-width:500px) {
+            display: none;
+        }
+
+    }
+}
+
+.dark-header {
+    .form-control {
+        background: rgba(31, 28, 72, 1);
+        border: 1px solid transparent;
+        color: rgba(var(--light-blue), 1);
+        width: 17.938rem;
+        height: 2.75rem;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::placeholder {
+            color: rgba(var(--light-blue), 1);
+        }
+
+        @media (max-width:500px) {
+            display: none;
+        }
+    }
+
+    .navbar {
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .navbar-collapse {
+            flex-grow: unset;
+
+            @include media-breakpoint-down(xl) {
+                position: absolute;
+                top: 4.25rem;
+                background-color: rgba(var(--card-bg), 1);
+                z-index: 9;
+                padding: 1.125rem;
+                right: 43%;
+                width: 13.125rem;
+
+                @media (max-width:500px) {
+                    right: 26%;
+                    width: 10.125rem;
+                    top: 3.5rem;
+                }
+
+                .navbar-nav {
+                    gap: 1rem;
+
+                    .nav-item {
+                        .nav-link {
+                            padding: 0;
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        @include media-breakpoint-down(xxl) {
+            gap: 1.25rem;
+        }
+
+        .nav-link {
+            color: rgba(var(--white), 1);
+            font-weight: 500;
+        }
+
+        .dropdown-menu {
+            &.show {
+                @media (max-width:500px) {
+                    min-width: 2.5rem;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        .form-control {
+            width: 12.1875rem;
+            height: 2.5rem;
+        }
+    }
+
+}
+
+/**=====================
+    3.2 Header css end
+==========================**/

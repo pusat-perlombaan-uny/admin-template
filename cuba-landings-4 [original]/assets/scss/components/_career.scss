@@ -1,0 +1,156 @@
+/**=====================
+    2.25 Career css start
+==========================**/
+.career-style-1 {
+    .title-style-2 {
+        h2 {
+            @include media-breakpoint-down(xl) {
+                margin-bottom: 0;
+            }
+
+            &::after {
+                left: 0;
+            }
+        }
+    }
+
+    .career-image {
+        text-align: right;
+    }
+
+    .company-wrapper {
+        padding: 2.25rem 1.5rem;
+        border: 1px solid rgba(var(--theme-body-sub-title-color), 0.1);
+        box-shadow: 0px 10px 10px rgba(var(--service-shadow), 0.04), 0px 8.69547px 6.95638px rgba(var(--service-shadow), 0.06), 0px 4.6181px 3.69448px rgba(var(--service-shadow), 0.0484671), 0px 1.9217px 1.53736px rgba(var(--service-shadow), 0.0337375);
+        border-radius: 10px;
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.75rem;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 1.125rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: .9375rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        .text-center {
+            a {
+                margin-top: 1.75rem;
+                display: block;
+
+                @include media-breakpoint-down(md) {
+                    margin-top: .9375rem;
+                }
+
+                svg {
+                    font-size: .75rem;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 1.5625rem 1.25rem;
+        }
+    }
+
+    .role-question {
+        padding: 1.25rem .9375rem;
+    }
+
+    .guidance-list {
+        li {
+            text-align: center;
+            padding-bottom: .625rem;
+            border-bottom: 1px solid rgba(var(--theme-body-sub-title-color), 0.2);
+
+            a {
+                font-weight: 500;
+                color: rgba(var(--theme-body-sub-title-color), 1);
+
+                span {
+                    font-size: .875rem;
+                    font-weight: 400;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: .8125rem;
+                    }
+                }
+            }
+
+            +li {
+                padding-top: .625rem;
+            }
+        }
+    }
+
+    .company-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+            gap: 0.9375rem;
+        }
+
+        .company-icon {
+            width: 3.125rem;
+            height: 3.125rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 10px 10px rgba(var(--service-shadow), 0.04), 0px 8.69547px 6.95638px rgba(var(--service-shadow), 0.06), 0px 4.6181px 3.69448px rgba(var(--service-shadow), 0.0484671), 0px 1.9217px 1.53736px rgba(var(--service-shadow), 0.0337375);
+            border-radius: 5px;
+        }
+
+        li {
+            .list-box {
+                display: flex;
+                align-items: center;
+                gap: .625rem;
+                padding: .625rem;
+                transition: .5s;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    transition: .5s;
+
+                }
+
+                h6 {
+                    font-size: 1rem;
+                    margin-bottom: .3125rem;
+                }
+
+                span {
+                    font-size: .875rem;
+                }
+
+                .company-details {
+                    margin-top: .3125rem;
+
+                    h6 {
+                        color: rgba(var(--theme-body-font-color), 1);
+                    }
+                }
+            }
+        }
+    }
+
+    .arrow-svg {
+        margin-left: -25%;
+        margin-top: 2%;
+    }
+}
+
+/**=====================
+    2.25 Career css end
+==========================**/

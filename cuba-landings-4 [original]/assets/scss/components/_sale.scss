@@ -1,0 +1,34 @@
+/**=====================
+    2.21 Sale css start
+==========================**/
+
+.create-style-1 {
+    position: relative;
+    overflow: hidden;
+
+    .bg-blur-color {
+        top: -4.25rem;
+        right: -41.875rem;
+        background: radial-gradient(50% 50% at 50% 50%, #42152F 0%, rgba(22, 21, 74, 0) 100%);
+
+        @media (max-width:1600px) {
+            right: -43.875rem;
+        }
+
+        @include media-breakpoint-down(xxl) {
+            right: -46.875rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            height: 31.25rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            height: 43.75rem;
+        }
+    }
+}
+
+/**=====================
+    2.21 Sale css end
+==========================**/

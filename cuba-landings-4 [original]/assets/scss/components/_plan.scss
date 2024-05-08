@@ -1,0 +1,389 @@
+/**=====================
+    2.14 Plan css start
+==========================**/
+.plan-style-1 {
+    .plan-box {
+        padding: 1.875rem 1.25rem 1.25rem;
+        box-shadow: 0px 4px 4px #DEDDED, 0px 9px 20px rgba(46, 35, 94, 0.07);
+        border-radius: 10px;
+        border: 2px solid rgba(var(--white), 1);
+        transition: 0.5s;
+
+        h3 {
+            padding-bottom: .9375rem;
+            border-bottom: 1px solid rgba(var(--border-light), 1);
+        }
+
+        .text-center {
+            >p {
+                margin-top: .625rem;
+            }
+        }
+
+        .plan-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .3125rem;
+            padding-top: .9375rem;
+            padding-bottom: .9375rem;
+
+            span {
+                color: rgba(var(--theme-body-sub-title-color), 1);
+                opacity: 0.8;
+            }
+        }
+
+        .trial-content {
+            padding: .9375rem;
+            background-color: rgba(var(--even-bg), 1);
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                height: 5.8rem;
+                margin-bottom: 2.1875rem;
+                gap: .75rem;
+                overflow: hidden;
+
+                @include media-breakpoint-down(xxl) {
+                    height: 7.25rem;
+                }
+
+                @include media-breakpoint-down(md) {
+                    height: 7.5rem;
+                }
+
+                @media (max-width: 530px) {
+                    height: 6.1rem;
+                }
+
+                li {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: .625rem;
+                    text-align: left;
+
+                    svg {
+                        min-width: 1.25rem;
+                        width: 1.25rem;
+                        height: 1.25rem;
+
+                        @include media-breakpoint-down(md) {
+                            min-width: 1rem;
+                            width: 1rem;
+                            height: 1rem;
+                        }
+                    }
+
+                    span {
+                        color: rgba(var(--theme-body-sub-title-color), 1);
+                        opacity: 0.8;
+
+                        @include media-breakpoint-down(lg) {
+                            line-height: 1.4;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                width: calc(100% - 20px);
+            }
+        }
+
+        .btn-outline-dark {
+            border-color: rgba(var(--theme-body-sub-title-color), 1);
+            color: rgba(var(--theme-body-sub-title-color), 1);
+
+            &:hover {
+                color: rgba(var(--white), 1);
+                background: linear-gradient(90deg, #7366FF -18.33%, #563EE0 62.78%);
+                border-color: #7366FF;
+            }
+        }
+
+        &:hover {
+            border: 2px solid rgba(var(--primary), 1);
+            transition: 0.5s;
+
+            .btn-outline-dark {
+                color: rgba(var(--white), 1);
+                background: linear-gradient(90deg, #7366FF -18.33%, #563EE0 62.78%);
+                border-color: #7366FF;
+            }
+        }
+    }
+
+    .plan-slider-wrapper {
+        margin: -0.25rem;
+
+        .swiper {
+            padding: .25rem;
+        }
+    }
+}
+
+.plan-style-2 {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        padding: 1.5625rem .9375rem;
+
+        @include media-breakpoint-down(sm) {
+            padding: 1.25rem 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+
+            svg {
+                width: 1.125rem;
+                height: 1.125rem;
+            }
+
+            span {
+                color: rgba(var(--theme-body-sub-title-color), 1);
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .plan-price {
+        padding: 1.25rem 2.375rem;
+        background: #F5F8FF;
+        border-radius: .3125rem;
+        transition: 0.5s;
+
+        .d-flex {
+            align-items: flex-end;
+            justify-content: center;
+
+            h6 {
+                margin-bottom: 3px;
+            }
+        }
+
+        .btn {
+            padding: .4375rem 1.25rem;
+            margin-top: .625rem;
+            width: 100%;
+        }
+    }
+
+    .plan-slider-wrapper {
+        margin: -0.625rem;
+
+        .swiper {
+            padding: .625rem;
+        }
+    }
+
+    .plan-card {
+        transition: 0.5s;
+        border: 1px solid transparent;
+        padding: 1.875rem 1.5625rem;
+        border-radius: 5px;
+        box-shadow: 0px 10.9412px 10.9412px rgba(82, 77, 141, 0.04), 0px 9.51387px 7.6111px rgba(82, 77, 141, 0.06), 0px 5.05275px 4.0422px rgba(82, 77, 141, 0.0484671);
+
+        .plan-icon-wrapper {
+            position: relative;
+            width: 4.9375rem;
+            height: 4.9375rem;
+            padding: .5rem;
+            border-radius: 100%;
+            background: linear-gradient(159.12deg, #ECEEF4 15.46%, #FFFFFF 65.03%);
+            margin: 0 auto;
+
+            @include media-breakpoint-down(md) {
+                width: 3.75rem;
+                height: 3.75rem;
+            }
+
+            .plan-icon {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(159.08deg, #F9F9F9 12%, #FFFFFF 86.17%);
+                box-shadow: 0px 4px 4px rgba(83, 81, 114, 0.2);
+                border-radius: 100%;
+            }
+
+            svg {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        }
+
+        .plan-content {
+            text-align: center;
+
+            h3 {
+                font-size: 1.375rem;
+                margin-top: .9375rem;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.125rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        &:hover {
+            border: 1px solid rgba(var(--primary), 1);
+            transition: 0.5s;
+
+            .plan-price {
+                color: rgba(var(--white), 1);
+                background: rgba(var(--primary), 1);
+                transition: 0.5s;
+
+                .btn-primary {
+                    background: rgba(var(--white), 1);
+                    color: rgba(var(--primary), 1);
+                }
+            }
+        }
+    }
+}
+
+.plan-style-3 {
+    .plan-card {
+        border: 1px solid rgba(82, 82, 108, 0.1);
+        box-shadow: 0px 10px 10px rgba(var(--service-shadow), 0.04), 0px 8.69547px 6.95638px rgba(var(--service-shadow), 0.06), 0px 4.6181px 3.69448px rgba(var(--service-shadow), 0.0484671), 0px 1.9217px 1.53736px rgba(var(--service-shadow), 0.0337375);
+        border-radius: .625rem;
+        padding: 1.875rem;
+
+        @include media-breakpoint-down(md) {
+            padding: 1.25rem;
+        }
+
+        .plan-price {
+            display: flex;
+            gap: .9375rem;
+            margin-bottom: 1.25rem;
+
+            h6 {
+                font-size: 1rem;
+                margin-bottom: .3125rem;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: .875rem;
+                }
+            }
+
+            h3 {
+                margin-right: .625rem;
+            }
+
+            span {
+                margin-bottom: 4px;
+
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 2px;
+                }
+            }
+
+            >img {
+                height: 3.125rem;
+
+                @include media-breakpoint-down(sm) {
+                    height: 2.5rem;
+                }
+            }
+
+            .d-flex {
+                flex-wrap: wrap;
+            }
+        }
+
+        .plan-list {
+            display: flex;
+            flex-direction: column;
+            gap: .9375rem;
+            margin-top: 1.25rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(82, 82, 108, 0.2);
+
+            @include media-breakpoint-down(md) {
+                gap: .5rem;
+                margin-top: .625rem;
+                padding-top: .625rem;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+
+                @include media-breakpoint-down(md) {
+                    gap: .3125rem;
+                }
+
+                svg {
+                    color: rgba(var(--success), 1);
+                }
+
+                p {
+                    span {
+                        font-weight: 500;
+                        color: rgba(var(--theme-body-font-color), 1);
+                    }
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 1.5625rem;
+        }
+
+        &:hover {
+            background-image: url(../images/job/bg-plan.webp);
+            background-size: cover;
+            color: rgba(var(--white), 1);
+
+            p,
+            .txt-light {
+                color: rgba(var(--white), 1);
+            }
+
+            .btn-light-primary {
+                background-color: rgba(var(--white), 1);
+                color: rgba(var(--primary), 1);
+            }
+
+            .plan-list {
+                border-top: 1px solid rgba(var(--white), 0.5);
+
+                li {
+                    p {
+                        span {
+                            color: rgba(var(--white), 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .plan-slider-wrapper {
+        margin: -.0625rem -.0625rem -.625rem;
+
+        .swiper {
+            padding: .0625rem .0625rem .625rem;
+        }
+    }
+}
+
+/**=====================
+    2.14 Plan css end
+==========================**/

@@ -1,0 +1,205 @@
+/**=====================
+   1.1 Reset css start
+==========================**/
+@media (min-width: 1460px) {
+    .custom-container {
+        max-width: 1420px;
+    }
+}
+
+.txt-primary {
+    color: rgba(var(--primary), 1);
+}
+
+.txt-secondary {
+    color: rgba(var(--secondary), 1);
+}
+
+.txt-warning {
+    color: rgba(var(--warning), 1);
+}
+
+.txt-success {
+    color: rgba(var(--success), 1);
+}
+
+.txt-info {
+    color: rgba(var(--info), 1);
+}
+
+.txt-danger {
+    color: rgba(var(--danger), 1);
+}
+
+.txt-light {
+    color: rgba(var(--theme-body-sub-title-color), 1);
+    opacity: 0.8;
+}
+
+.light-card {
+    background: rgba(var(--light-bg), 0.7);
+}
+
+.bg-light-primary {
+    background-color: rgba(var(--primary), 0.1);
+
+    svg {
+        fill: rgba(var(--primary), 1);
+    }
+}
+
+.bg-light-success {
+    background-color: rgba(var(--success), 0.1);
+}
+
+.bg-light-danger {
+    background-color: rgba(var(--danger), 0.1);
+}
+
+.bg-light-info {
+    background-color: rgba(var(--info), 0.1);
+}
+
+.bg-light-warning {
+    background-color: rgba(var(--warning), 0.1);
+}
+
+.badge-light {
+    background: rgba(223, 222, 233, 0.3);
+    border-radius: 3px;
+    color: rgba(var(--theme-body-sub-title-color), 1);
+}
+
+.badge {
+    --bs-badge-font-weight: 500;
+    padding: .625rem .9375rem;
+    font-size: .875rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: .8125rem;
+    }
+}
+
+.badge-light-1 {
+    background-color: rgba(var(--info), 0.1);
+    color: rgba(var(--info), 1);
+}
+
+.badge-light-2 {
+    background-color: rgba(53, 156, 239, 0.1);
+    color: #359CEF;
+}
+
+.badge-light-3 {
+    background: rgba(115, 102, 255, 0.1);
+    color: #7366FF;
+}
+
+.badge-light-4 {
+    background: rgba(184, 72, 237, 0.05);
+    color: #B848ED;
+}
+
+.info {
+    svg {
+        fill: rgba(var(--info), 1);
+    }
+}
+
+.primary {
+    svg {
+        fill: rgba(var(--primary), 1);
+    }
+}
+
+.success {
+    svg {
+        fill: rgba(var(--success), 1);
+    }
+}
+
+.warning {
+    svg {
+        fill: rgba(var(--warning), 1);
+    }
+}
+
+section,
+.section-t-space {
+    padding-top: 5rem;
+
+    @include media-breakpoint-down(xl) {
+        padding-top: 4.0625rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-top: 3.4375rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 2.5rem;
+    }
+}
+
+.section-b-space {
+    padding-bottom: 5rem;
+
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 4.0625rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 3.4375rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.bg-primary {
+    background-color: rgba(var(--primary), 1) !important;
+    color: rgba(var(--white), 1);
+}
+
+.bg-blur-color {
+    position: absolute;
+    z-index: -1;
+    width: 57.375rem;
+    height: 41.5625rem;
+}
+
+
+// tap-top
+.tap-top {
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 5;
+    color: #fff;
+    background: rgba(var(--primary), 1);
+    border: none;
+    padding: 7px;
+    box-shadow: 0 0 10px rgba(var(--primary), 1);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transition: all 0.3s ease;
+        opacity: 1;
+    }
+
+    svg {
+        width: 20px;
+    }
+}
+
+/**=====================
+  1.1 Reset css end
+==========================**/

@@ -1,0 +1,87 @@
+/*! -----------------------------------------------------------------------------------
+
+    Template Name: Cuba Landing template
+    Template URI: 
+    Description: This is Landing theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------
+    
+    1.Base css
+        1.1 Reset CSS
+        1.2 Typography CSS
+    
+    2.Components css
+        2.1 About-item CSS
+        2.2 Buttons CSS
+        2.3 Keyframes CSS
+        2.4 Title CSS
+        2.5 Home CSS
+        2.6 Brand CSS
+        2.7 Service CSS
+        2.8 About CSS
+        2.9 Solution CSS
+        2.10 Feature CSS
+        2.11 Overview CSS
+        2.12 Review CSS
+        2.13 Subscribe CSS
+        2.14 Plan CSS
+        2.15 Collect CSS
+        2.16 Blog CSS
+        2.17 Why-choose CSS
+        2.18 Track CSS
+        2.19 Job CSS
+        2.20 Process CSS
+        2.21 Sale CSS
+        2.22 Category CSS
+        2.23 Banner CSS
+        2.24 Creator CSS
+        2.25 Career CSS
+        2.26 Marquee CSS
+        2.27 Loader CSS
+
+    3.Layout css
+        3.1 Forms CSS
+        3.2 Header CSS
+        3.3 Footer CSS
+*/
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import "abstracts/variables";
+
+@import "base/typography";
+@import "base/reset";
+
+@import "components/about-item";
+@import "components/buttons";
+@import "components/keyframes";
+@import "components/title";
+@import "components/home";
+@import "components/brand";
+@import "components/service";
+@import "components/about";
+@import "components/solution";
+@import "components/feature";
+@import "components/overview";
+@import "components/review";
+@import "components/subscribe";
+@import "components/plan";
+@import "components/collect";
+@import "components/blog";
+@import "components/why-choose";
+@import "components/loader";
+@import "components/track";
+@import "components/job";
+@import "components/process";
+@import "components/sale";
+@import "components/category";
+@import "components/banner";
+@import "components/creator";
+@import "components/career";
+@import "components/marquee";
+
+@import "layout/forms";
+@import "layout/header";
+@import "layout/footer";
